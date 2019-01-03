@@ -8,7 +8,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.*
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.app_bar_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -57,22 +58,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
-                // Handle the camera action
-            }
-            R.id.nav_gallery -> {
+            R.id.menu_item_home -> {
 
             }
-            R.id.nav_slideshow -> {
+            R.id.menu_item_sign_up -> {
 
             }
-            R.id.nav_manage -> {
+            R.id.menu_item_sign_in -> {
 
             }
-            R.id.nav_share -> {
+            R.id.menu_item_new_article -> {
 
             }
-            R.id.nav_send -> {
+            R.id.menu_item_settings -> {
 
             }
         }
